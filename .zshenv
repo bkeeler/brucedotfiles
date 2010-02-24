@@ -4,7 +4,6 @@ export NAME="Bruce J. Keeler"
 export PAGER=less
 export LESS=-Mids
 
-export PATH=$HOME/bin:$PATH
 eval "$(lesspipe)"
 
 if [ -e ~/.zshenv."$OSTYPE" ] ; then
@@ -14,3 +13,4 @@ if [ -e ~/.zshenv."$HOST" ] ; then
         source ~/.zshenv."$HOST"
 fi
 
+export PATH=$HOME/bin:$PATH
