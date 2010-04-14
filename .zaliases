@@ -1,3 +1,4 @@
+
 lsd () { ls -d $* *(/) }
 chpwd () {
         dir=`print -P "%~"`
