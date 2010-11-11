@@ -7,8 +7,8 @@ export LESS=-Mids
 if [ -e ~/.zshenv."$OSTYPE" ] ; then
         source ~/.zshenv."$OSTYPE"
 fi
-if [ -e ~/.zshenv."$HOST" ] ; then
-        source ~/.zshenv."$HOST"
+if [ -e ~/.zshenv."${HOST%%.*}" ] ; then
+        source ~/.zshenv."${HOST%%.*}"
 fi
 
 export PATH=$HOME/bin:$PATH:/usr/sbin:/sbin
