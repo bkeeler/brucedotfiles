@@ -25,6 +25,6 @@ alias more=less
 if [ -e ~/.zaliases."$OSTYPE" ] ; then
 	source ~/.zaliases."$OSTYPE"
 fi
-if [ -e ~/.zaliases."$HOST" ] ; then
-	source ~/.zaliases."$HOST"
+if [ -e ~/.zaliases."${HOST%%.*}" ] ; then
+	source ~/.zaliases."${HOST%%.*}"
 fi

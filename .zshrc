@@ -1,5 +1,11 @@
+if [ -e ~/.zshrc."$OSTYPE" ] ; then
+        source ~/.zshrc."$OSTYPE"
+fi
+if [ -e ~/.zshrc."${HOST%%.*}" ] ; then
+        source ~/.zshrc."${HOST%%.*}"
+fi
+
 # The following lines were added by compinstall
-setopt sunkeyboardhack
 setopt extendedglob
 setopt autopushd pushdminus pushdsilent pushdtohome pushdignoredups
 setopt automenu
@@ -12,7 +18,6 @@ setopt nullglob
 setopt printexitvalue
 setopt nohup
 setopt auto_cd
-setopt cdablevars
 setopt correct correct_all
 setopt histignoredups histignorespace hist_no_store
 unsetopt notify
